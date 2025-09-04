@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Online Store</string>
+    <string name="Sign_Up"><u>Sign Up</u></string>
+    <string name="terms_text">By clicking the <font color="#F83758">Register</font> button, you agree to the public offer</string>
+    <string name="Register"><u>Login</u></string>
+    <string name="client_id">587002110638-7o3n5g6r0g420cmqrummku04j0n442l6.apps.googleusercontent.com</string>
+</resources>
