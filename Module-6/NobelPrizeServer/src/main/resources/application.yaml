@@ -1,0 +1,23 @@
+ktor:
+  deployment:
+    port: 8080
+    host: 0.0.0.0
+  application:
+    modules:
+      - com.example.ApplicationKt.module
+
+jwt:
+  secret: "$JWT_SECRET:nobel-prize-api-super-secret-key-change-me-please-2026"
+  issuer: "nobel-prize-api"
+  audience: "nobel-prize-users"
+  realm: "Nobel Prize API"
+  expirationMinutes: 30
+
+database:
+  jdbcUrl: "$DATABASE_URL:jdbc:postgresql://localhost:5432/nobel_prize_db"
+  user: "$DATABASE_USER:postgres"
+  password: "$DATABASE_PASSWORD:Igor_6657"
+  driver: "org.postgresql.Driver"
+  maximumPoolSize: 10
+  seedOnStartup: true
+

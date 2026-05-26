@@ -1,0 +1,21 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - com.example.ApplicationKt.module
+
+jwt:
+  secret: "test-secret-must-be-at-least-32-characters-long-yes"
+  issuer: "nobel-prize-api"
+  audience: "nobel-prize-users"
+  realm: "Nobel Prize API Test"
+  expirationMinutes: 30
+
+database:
+  jdbcUrl: "jdbc:h2:mem:test;MODE=PostgreSQL;DB_CLOSE_DELAY=-1"
+  user: "sa"
+  password: ""
+  driver: "org.h2.Driver"
+  maximumPoolSize: 3
+  seedOnStartup: true
